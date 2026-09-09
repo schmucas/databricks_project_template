@@ -58,7 +58,7 @@ if something starts to. Notebooks read both values from job parameters via
 `dbutils.notebook.entry_point.getCurrentBindings()`; pipeline source files read
 them with `spark.conf.get(...)`, because pipelines have no widgets.
 
-## Naming rule inside declerative pipeline
+## Naming rule inside the declarative pipeline
 
 The pipeline sets `schema: silver`, so bare dataset names resolve to the silver
 schema. Anything outside it is fully qualified: bronze sources and gold targets
