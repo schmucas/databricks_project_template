@@ -9,7 +9,7 @@ day one.
 
 ```bash
 # GitHub: "Use this template", or locally:
-git clone https://github.com/<you>/databricks_project_template my_new_project
+git clone https://github.com/schmucas/databricks_project_template my_new_project
 cd my_new_project
 
 python3 scripts/init_project.py
