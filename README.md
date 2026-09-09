@@ -5,10 +5,6 @@ Free Edition: three deploy targets, four GitHub Actions workflows, the bronze /
 silver / gold skeleton, and a thin end-to-end example that deploys and runs on
 day one.
 
-**This repo is a template.** Don't build in it. Copy it, then run
-`scripts/init_project.py` once, which rewrites the placeholder identity, gives
-the bundle a fresh UUID, and deletes itself. See [docs/TEMPLATE.md](docs/TEMPLATE.md).
-
 ## Start a new project
 
 ```bash
@@ -62,7 +58,7 @@ if something starts to. Notebooks read both values from job parameters via
 `dbutils.notebook.entry_point.getCurrentBindings()`; pipeline source files read
 them with `spark.conf.get(...)`, because pipelines have no widgets.
 
-## Naming rule inside the pipeline
+## Naming rule inside the declarative pipeline
 
 The pipeline sets `schema: silver`, so bare dataset names resolve to the silver
 schema. Anything outside it is fully qualified: bronze sources and gold targets
